@@ -56,12 +56,11 @@ class AggregatorTest {
 
     @Test
     fun `Ampel-Schwellen wechseln bei 90 und 110 Prozent`() {
-        // Exakt 110 % wird hier bewusst nicht getestet: 2200/2000×100 ergibt
-        // in Fließkomma 110,000…01 und kippt damit knapp nach OVER — an der
-        // haargenauen Grenze ist das Ergebnis float-empfindlich.
+        // Auch die haargenauen Grenzwerte müssen stabil sein: Fließkomma-Staub
+        // (2200/2000×100 = 110,000…01) wird im Aggregator per Epsilon toleriert.
         assertEquals(Aggregator.Status.OK, statusForVitaminC(1798.0))     // 89,9 %
         assertEquals(Aggregator.Status.LIMIT, statusForVitaminC(1800.0))  // 90,0 %
-        assertEquals(Aggregator.Status.LIMIT, statusForVitaminC(2198.0))  // 109,9 %
+        assertEquals(Aggregator.Status.LIMIT, statusForVitaminC(2200.0))  // 110,0 % exakt
         assertEquals(Aggregator.Status.OVER, statusForVitaminC(2210.0))   // 110,5 %
     }
 

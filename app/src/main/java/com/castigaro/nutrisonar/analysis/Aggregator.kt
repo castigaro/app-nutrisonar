@@ -170,9 +170,15 @@ object Aggregator {
         }
     }
 
+    // Fließkomma-Staub darf die Ampel nicht kippen: 2200/2000×100 ergibt binär
+    // 110,000…01 (zeigte Rot statt Gelb), und knapp unter 90 könnte umgekehrt
+    // fälschlich Grün statt Gelb erscheinen. Die winzige Toleranz macht beide
+    // Grenzen robust — und irrt an der 90er-Grenze zur warnenden Seite.
+    private const val PERCENT_EPSILON = 1e-9
+
     private fun statusFor(percent: Double): Status = when {
-        percent > 110.0 -> Status.OVER
-        percent >= 90.0 -> Status.LIMIT
+        percent > 110.0 + PERCENT_EPSILON -> Status.OVER
+        percent >= 90.0 - PERCENT_EPSILON -> Status.LIMIT
         else -> Status.OK
     }
 
