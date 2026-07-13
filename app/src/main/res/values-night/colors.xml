@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Helleres Türkis für Akzente, damit sie auf dunklem Untergrund gut
+         lesbar sind. -->
+    <color name="primary">#63C1D4</color>
+    <color name="primary_dark">#4EA7B8</color>
+    <color name="secondary">#8FD4E2</color>
+    <!-- Toolbar bleibt dunkel, damit der weiße Titel darauf gut lesbar ist. -->
+    <color name="toolbar_bg">#012E36</color>
+</resources>

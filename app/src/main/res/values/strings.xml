@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NutriSonar</string>
+
+    <!-- Personenliste -->
+    <string name="empty_state">Noch keine Personen angelegt.\n\nTippe auf +, um eine Person anzulegen — dann Präparate fotografieren und analysieren.</string>
+    <string name="add_person_title">Person anlegen</string>
+    <string name="edit_person_title">Person bearbeiten</string>
+    <string name="person_name_hint">Name oder Kürzel</string>
+    <string name="person_age_hint">Alter</string>
+    <string name="person_weight_hint">Gewicht (kg)</string>
+    <string name="person_medications_hint">Medikamente (optional)</string>
+    <string name="person_medications_note">Optional — ohne Liste ist keine vollständige Wechselwirkungsprüfung möglich; jederzeit nachreichbar.</string>
+    <string name="delete_person">Person löschen</string>
+    <string name="delete_person_message">„%1$s“ samt Produkten und Analyse wirklich löschen?</string>
+    <string name="age_years">%1$d Jahre</string>
+    <string name="weight_kg">%1$s kg</string>
+    <plurals name="product_count">
+        <item quantity="one">1 Produkt</item>
+        <item quantity="other">%1$d Produkte</item>
+    </plurals>
+
+    <!-- Personen-Detail ("Stand") -->
+    <string name="person_empty_state">Noch keine Präparate erfasst.\n\nTippe auf die Kamera und fotografiere das Etikett eines Präparats.</string>
+    <string name="person_no_details">Alter/Gewicht: tippen zum Ergänzen</string>
+    <string name="medications_missing">Keine Medikamente angegeben — für die Wechselwirkungsprüfung antippen und ergänzen.</string>
+    <string name="medications_line">Medikamente: %1$s</string>
+    <string name="capture_product">Präparat fotografieren</string>
+    <string name="product_subtitle">„%1$s“ · %2$s Stück/Tag</string>
+    <plurals name="nutrient_count">
+        <item quantity="one">1 Wirkstoff</item>
+        <item quantity="other">%1$d Wirkstoffe</item>
+    </plurals>
+    <string name="uncertain_values">⚠️ %1$d unsicher</string>
+    <string name="delete_product">Produkt löschen</string>
+    <string name="delete_product_message">„%1$s“ wirklich löschen?</string>
+    <string name="no_products_yet">Noch keine Produkte erfasst — zuerst Präparate fotografieren.</string>
+    <string name="needs_key">Zum Ablesen und Analysieren braucht die App einen API-Key. Bitte in den Einstellungen eintragen.</string>
+
+    <!-- Erfassung -->
+    <string name="capture_title">Präparat erfassen</string>
+    <string name="photo_preview">Fotovorschau</string>
+    <string name="reading_label">Etikett wird abgelesen …</string>
+    <string name="label_read_ok">Erfasst: %1$d Werte — bitte kurz prüfen, Schema wählen, speichern.</string>
+    <string name="label_read_uncertain">Erfasst: %1$d Werte, davon %2$d ⚠️ unsicher — bitte prüfen (antippen zum Korrigieren).</string>
+    <string name="product_name_hint">Produktname</string>
+    <string name="nutrients_captured">Abgelesene Werte (pro Stück)</string>
+    <string name="nutrients_edit_hint">Antippen zum Korrigieren, langes Drücken entfernt.</string>
+    <string name="per_piece">pro Stück</string>
+    <string name="uncertain_check">⚠️ unsicher – bitte prüfen</string>
+    <string name="edit_nutrient">Wert korrigieren</string>
+    <string name="nutrient_name_hint">Nährstoff/Wirkstoff</string>
+    <string name="nutrient_amount_hint">Menge</string>
+    <string name="nutrient_unit_hint">Einheit</string>
+    <string name="nutrient_per_piece_note">Menge pro EINE Tablette/Kapsel. Nach dem Korrigieren gilt der Wert als geprüft.</string>
+    <string name="no_nutrients">Keine Werte erfasst — Foto wiederholen oder Werte manuell ergänzen.</string>
+    <string name="schedule_hint_label">Einnahmeschema</string>
+    <string name="schedule_examples">Beispiele: 1-0-1 · nur morgens: 1-0-0 · jeden 2. Tag · 2x täglich</string>
+    <string name="schedule_pieces_per_day">= %1$s Stück/Tag</string>
+    <string name="schedule_unreadable">Schema nicht lesbar — z. B. „1-0-1“, „jeden 2. Tag“ oder eine Zahl eingeben.</string>
+    <string name="default_schedule">1-0-0</string>
+    <string name="save_product">Produkt speichern</string>
+    <string name="unnamed_product">Unbenanntes Präparat</string>
+    <string name="retry">Erneut</string>
+
+    <!-- Analyse -->
+    <string name="action_analyze">Analysieren</string>
+    <string name="action_update">Aktualisieren</string>
+    <string name="analyzing">Analyse läuft — Summen werden berechnet, Texte erstellt …</string>
+    <string name="analyze_error">Fehler: %1$s</string>
+    <string name="action_show_report">Bericht anzeigen</string>
+
+    <!-- Simulation -->
+    <string name="action_simulate">Simulieren</string>
+    <string name="simulate_title">Simulieren: Produkte an/abwählen</string>
+    <string name="simulate_run">Durchrechnen</string>
+    <string name="simulate_result_title">Simulation (nur Ansicht)</string>
+    <string name="simulate_all_ok">Alle Werte unkritisch. ✅</string>
+    <string name="simulate_note">Berücksichtigt: %1$d von %2$d Produkten. Nichts wurde gespeichert.</string>
+    <string name="ok">OK</string>
+
+    <!-- Bericht -->
+    <string name="report_title">Analyse — %1$s</string>
+    <string name="history_line">Verlauf: %1$s</string>
+    <string name="report_head">Stand %1$s · %2$s</string>
+    <string name="meds_missing_note">Ohne Medikamentenliste ist keine vollständige Wechselwirkungsprüfung möglich — jederzeit nachreichbar.</string>
+    <string name="products_title">Produkte</string>
+    <string name="nutrients_title">Tagesbilanz</string>
+    <string name="report_row_values">%1$s / Höchstmenge %2$s · Überschreitung: %3$s</string>
+    <string name="others_title">Weitere Wirkstoffe (ohne UL)</string>
+    <string name="interactions_title">Wechselwirkungen</string>
+    <string name="no_interactions">Keine auffälligen Wechselwirkungen erkannt.</string>
+    <string name="summary_title">Kurzfazit</string>
+    <string name="doctor_hint">Bewertung bei Bedarf mit Arzt oder Apotheke besprechen.</string>
+    <string name="share_report">Bericht teilen</string>
+
+    <!-- Einstellungen -->
+    <string name="title_settings">Einstellungen</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <!-- Hilfe -->
+    <string name="title_help">Hilfe</string>
+    <string name="action_help">Hilfe</string>
+    <string name="help_intro">NutriSonar erstellt eine rein technische Analyse deiner Nahrungsergänzungsmittel: Was nimmst du pro Tag auf, werden Höchstmengen überschritten, was kann das bedeuten? Keine ärztliche Beratung.</string>
+    <string name="help_persons_title">Personen</string>
+    <string name="help_persons_body">Lege pro Person ein Profil an (Name/Kürzel, Alter, Gewicht). Medikamente sind optional und jederzeit nachreichbar — erst mit ihnen ist die Wechselwirkungsprüfung vollständig. Jede Person hat ihre eigene Produktliste und ihren eigenen Bericht. Alle Daten bleiben auf dem Gerät.</string>
+    <string name="help_capture_title">Präparate erfassen</string>
+    <string name="help_capture_body">Kamera-Knopf antippen und das Etikett mit der Nährstofftabelle fotografieren. Die KI liest Name, Wirkstoffe und Mengen ab — Bezugsgrößen wie „pro 6 Tabletten“ werden automatisch auf ein Stück umgerechnet. Nicht sicher lesbare Werte sind mit ⚠️ markiert: antippen, prüfen, korrigieren. Danach das Einnahmeschema wählen (z. B. 1-0-1 oder „jeden 2. Tag“) und speichern. Die Liste einer Person zeigt jederzeit den aktuellen Stand.</string>
+    <string name="help_analyze_title">Analysieren</string>
+    <string name="help_analyze_body">„Analysieren“ summiert jeden Nährstoff über alle Produkte (auch wenn er in mehreren steckt) und vergleicht mit der tolerierbaren Höchstmenge (EFSA, sonst US-Wert — in der Tabelle gekennzeichnet). Die Summen rechnet die App selbst; die KI liefert nur die Texte zu möglichen Folgen, Wechselwirkungen und das Kurzfazit. Ampel: 🔴 deutlich über Grenze, ⚠️ am Limit, ✅ unkritisch. Bei Niacin hängt der Grenzwert von der Form ab — die App zeigt dann beide Fälle. Der Bericht lässt sich als Markdown-Datei teilen, z. B. zum Ausdrucken oder für den Arzttermin. Nach Änderungen einfach „Aktualisieren“.</string>
+    <string name="help_simulate_title">Simulieren</string>
+    <string name="help_simulate_body">„Simulieren“ rechnet ein Szenario durch — etwa: Was passiert, wenn ich ein Präparat weglasse? Produkte abwählen, durchrechnen, Ergebnis ansehen. Gespeichert wird dabei nichts, und es entstehen keine KI-Kosten.</string>
+    <string name="help_key_title">API-Key</string>
+    <string name="help_key_body">In den Einstellungen wählst du deinen KI-Anbieter — Anthropic (Claude) oder OpenAI (GPT) — und trägst dessen API-Key ein. Der Key wird nur lokal gespeichert; Fotos und Produktdaten gehen ausschließlich zur Analyse an den gewählten Anbieter. Der Kostenzähler in den Einstellungen schätzt die bisherigen KI-Kosten.</string>
+
+    <!-- Allgemein -->
+    <string name="save">Speichern</string>
+    <string name="delete">Löschen</string>
+    <string name="cancel">Abbrechen</string>
+
+    <string-array name="schedule_suggestions">
+        <item>1-0-0</item>
+        <item>0-0-1</item>
+        <item>1-0-1</item>
+        <item>1-1-1</item>
+        <item>2-0-0</item>
+        <item>jeden 2. Tag</item>
+    </string-array>
+</resources>
