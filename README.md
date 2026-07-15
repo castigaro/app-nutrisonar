@@ -31,16 +31,16 @@ möglichen Folgen das hat.
 ## Technik
 
 - Kotlin, ViewBinding, Material Components; gemeinsame Bibliothek
-  `common/android` (Theme, Toolbar, komplette Provider-/Key-Verwaltung
-  mit Kostenzähler).
+  [`android-apps-common`](https://github.com/castigaro/android-apps-common)
+  (Theme, Toolbar, komplette Provider-/Key-Verwaltung mit Kostenzähler).
 - Direkte HTTP-Anbindung (OkHttp) an Anthropic Messages API bzw. OpenAI
   Chat Completions; Kamera ohne eigene Berechtigung über den System-Intent.
 - Datenhaltung als JSON in den App-Dateien; minSdk 26, targetSdk 34.
 
 ## Build
 
-CI baut per `.github/workflows/build-nutrisonar.yml` und veröffentlicht
-die APKs samt Versions-Manifest im GitHub-Release `nutrisonar-latest`;
-`deploy-website.yml` synct beides nach [appsonar.de](https://appsonar.de).
+CI baut per `.github/workflows/build.yml` und veröffentlicht die APKs samt
+Versions-Manifest im GitHub-Release `latest`;
+[appsonar.de](https://appsonar.de) verlinkt direkt darauf.
 Die App prüft beim Start und über „Nach Update suchen“ gegen das Manifest
-auf neue Versionen (gemeinsamer `UpdateChecker` aus `common/android`).
+auf neue Versionen (gemeinsamer `UpdateChecker` aus `android-apps-common`).

@@ -137,6 +137,6 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val VERSION_URL =
-            "https://appsonar.de/downloads/nutrisonar-version.json"
+            "https://github.com/castigaro/app-nutrisonar/releases/download/latest/nutrisonar-version.json"
     }
 }

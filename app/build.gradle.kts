@@ -11,11 +11,11 @@ android {
         applicationId = "com.castigaro.nutrisonar"
         minSdk = 26
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.1.1"
+        versionCode = 4
+        versionName = "1.1.2"
     }
 
-    // Keystore und Passwort kommen aus GitHub-Secrets (siehe build-nutrisonar.yml).
+    // Keystore und Passwort kommen aus GitHub-Secrets (siehe build.yml).
     // Ohne beides wird die Release-Variante unsigniert gebaut.
     val releaseKeystore = rootProject.file("keystore/release.jks")
     val releaseStorePassword = project.findProperty("RELEASE_STORE_PASSWORD") as String?
