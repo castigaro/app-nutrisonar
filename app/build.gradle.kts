@@ -11,8 +11,8 @@ android {
         applicationId = "com.castigaro.nutrisonar"
         minSdk = 26
         targetSdk = 34
-        versionCode = 4
-        versionName = "1.1.2"
+        versionCode = 5
+        versionName = "1.1.3"
     }
 
     // Keystore und Passwort kommen aus GitHub-Secrets (siehe build.yml).
