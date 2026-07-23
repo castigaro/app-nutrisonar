@@ -31,7 +31,7 @@ möglichen Folgen das hat.
 ## Technik
 
 - Kotlin, ViewBinding, Material Components; gemeinsame Bibliothek
-  [`android-apps-common`](https://github.com/castigaro/android-apps-common)
+  [`android-apps-common`](https://github.com/appsonar/android-apps-common)
   (Theme, Toolbar, komplette Provider-/Key-Verwaltung mit Kostenzähler).
 - Direkte HTTP-Anbindung (OkHttp) an Anthropic Messages API bzw. OpenAI
   Chat Completions; Kamera ohne eigene Berechtigung über den System-Intent.
